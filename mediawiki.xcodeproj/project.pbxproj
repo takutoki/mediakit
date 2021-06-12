@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F4E0A96267238FC00F2904C /* mediawikiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E0A95267238FC00F2904C /* mediawikiApp.swift */; };
+		9F4E0A96267238FC00F2904C /* MediaWikiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E0A95267238FC00F2904C /* MediaWikiApp.swift */; };
 		9F4E0A98267238FC00F2904C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E0A97267238FC00F2904C /* ContentView.swift */; };
 		9F4E0A9A267238FD00F2904C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4E0A99267238FD00F2904C /* Assets.xcassets */; };
 		9F4E0A9D267238FD00F2904C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4E0A9C267238FD00F2904C /* Preview Assets.xcassets */; };
@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		9F4E0A92267238FC00F2904C /* mediawiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mediawiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F4E0A95267238FC00F2904C /* mediawikiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mediawikiApp.swift; sourceTree = "<group>"; };
+		9F4E0A95267238FC00F2904C /* MediaWikiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWikiApp.swift; sourceTree = "<group>"; };
 		9F4E0A97267238FC00F2904C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F4E0A99267238FD00F2904C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4E0A9C267238FD00F2904C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		9F4E0A89267238FB00F2904C = {
 			isa = PBXGroup;
 			children = (
-				9F4E0A94267238FC00F2904C /* mediawiki */,
+				9F4E0A94267238FC00F2904C /* mediaWiki */,
 				9F4E0AA6267238FD00F2904C /* mediawikiTests */,
 				9F4E0AB1267238FE00F2904C /* mediawikiUITests */,
 				9F4E0A93267238FC00F2904C /* Products */,
@@ -92,16 +92,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F4E0A94267238FC00F2904C /* mediawiki */ = {
+		9F4E0A94267238FC00F2904C /* mediaWiki */ = {
 			isa = PBXGroup;
 			children = (
-				9F4E0A95267238FC00F2904C /* mediawikiApp.swift */,
+				9F4E0A95267238FC00F2904C /* MediaWikiApp.swift */,
 				9F4E0A97267238FC00F2904C /* ContentView.swift */,
 				9F4E0A99267238FD00F2904C /* Assets.xcassets */,
 				9F4E0A9E267238FD00F2904C /* Info.plist */,
 				9F4E0A9B267238FD00F2904C /* Preview Content */,
 			);
-			path = mediawiki;
+			path = mediaWiki;
 			sourceTree = "<group>";
 		};
 		9F4E0A9B267238FD00F2904C /* Preview Content */ = {
@@ -260,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4E0A98267238FC00F2904C /* ContentView.swift in Sources */,
-				9F4E0A96267238FC00F2904C /* mediawikiApp.swift in Sources */,
+				9F4E0A96267238FC00F2904C /* MediaWikiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
