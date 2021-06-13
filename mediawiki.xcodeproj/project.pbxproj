@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F009B802674B22100A1FAF2 /* WikiImageListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F009B7F2674B22100A1FAF2 /* WikiImageListResponse.swift */; };
+		9F009B822675D2B500A1FAF2 /* WikiImageListResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F009B812675D2B500A1FAF2 /* WikiImageListResponseTests.swift */; };
 		9F4E0A96267238FC00F2904C /* MediaWikiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E0A95267238FC00F2904C /* MediaWikiApp.swift */; };
 		9F4E0A98267238FC00F2904C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E0A97267238FC00F2904C /* ContentView.swift */; };
 		9F4E0A9A267238FD00F2904C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4E0A99267238FD00F2904C /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F009B7F2674B22100A1FAF2 /* WikiImageListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiImageListResponse.swift; sourceTree = "<group>"; };
+		9F009B812675D2B500A1FAF2 /* WikiImageListResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiImageListResponseTests.swift; sourceTree = "<group>"; };
 		9F4E0A92267238FC00F2904C /* mediawiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mediawiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4E0A95267238FC00F2904C /* MediaWikiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWikiApp.swift; sourceTree = "<group>"; };
 		9F4E0A97267238FC00F2904C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F009B7E2674B1F400A1FAF2 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				9F009B7F2674B22100A1FAF2 /* WikiImageListResponse.swift */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
 		9F4E0A89267238FB00F2904C = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +109,8 @@
 		9F4E0A94267238FC00F2904C /* mediaWiki */ = {
 			isa = PBXGroup;
 			children = (
+				9F009B7E2674B1F400A1FAF2 /* DataStructure */,
+				9F96AA9F2674A82700AC0E4C /* Model */,
 				9F4E0A95267238FC00F2904C /* MediaWikiApp.swift */,
 				9F4E0A97267238FC00F2904C /* ContentView.swift */,
 				9F4E0A99267238FD00F2904C /* Assets.xcassets */,
@@ -119,6 +133,7 @@
 			children = (
 				9F4E0AA7267238FE00F2904C /* mediawikiTests.swift */,
 				9F4E0AA9267238FE00F2904C /* Info.plist */,
+				9F009B812675D2B500A1FAF2 /* WikiImageListResponseTests.swift */,
 			);
 			path = mediawikiTests;
 			sourceTree = "<group>";
@@ -130,6 +145,13 @@
 				9F4E0AB4267238FE00F2904C /* Info.plist */,
 			);
 			path = mediawikiUITests;
+			sourceTree = "<group>";
+		};
+		9F96AA9F2674A82700AC0E4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F009B802674B22100A1FAF2 /* WikiImageListResponse.swift in Sources */,
 				9F4E0A98267238FC00F2904C /* ContentView.swift in Sources */,
 				9F4E0A96267238FC00F2904C /* MediaWikiApp.swift in Sources */,
 			);
@@ -277,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F009B822675D2B500A1FAF2 /* WikiImageListResponseTests.swift in Sources */,
 				9F4E0AA8267238FE00F2904C /* mediawikiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
