@@ -17,6 +17,7 @@
 		9F4E0AB3267238FE00F2904C /* mediawikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E0AB2267238FE00F2904C /* mediawikiUITests.swift */; };
 		9F96AA9E2674A6BA00AC0E4C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F96AA9D2674A6BA00AC0E4C /* Alamofire */; };
 		9FDF76C32675E4420032CA2C /* BaseApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF76C22675E4420032CA2C /* BaseApiProtocol.swift */; };
+		9FDF76C52675FE780032CA2C /* MediaWikiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF76C42675FE780032CA2C /* MediaWikiApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9F4E0AB2267238FE00F2904C /* mediawikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mediawikiUITests.swift; sourceTree = "<group>"; };
 		9F4E0AB4267238FE00F2904C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FDF76C22675E4420032CA2C /* BaseApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiProtocol.swift; sourceTree = "<group>"; };
+		9FDF76C42675FE780032CA2C /* MediaWikiApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWikiApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				9FDF76C22675E4420032CA2C /* BaseApiProtocol.swift */,
+				9FDF76C42675FE780032CA2C /* MediaWikiApi.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				9F009B802674B22100A1FAF2 /* WikiImageListResponse.swift in Sources */,
 				9F4E0A98267238FC00F2904C /* ContentView.swift in Sources */,
 				9F4E0A96267238FC00F2904C /* MediaWikiApp.swift in Sources */,
+				9FDF76C52675FE780032CA2C /* MediaWikiApi.swift in Sources */,
 				9FDF76C32675E4420032CA2C /* BaseApiProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
