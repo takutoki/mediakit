@@ -18,6 +18,9 @@
 		9F96AA9E2674A6BA00AC0E4C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F96AA9D2674A6BA00AC0E4C /* Alamofire */; };
 		9FDF76C32675E4420032CA2C /* BaseApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF76C22675E4420032CA2C /* BaseApiProtocol.swift */; };
 		9FDF76C52675FE780032CA2C /* MediaWikiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF76C42675FE780032CA2C /* MediaWikiApi.swift */; };
+		9FF280C0267F0A0F007D20D1 /* WikiImageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF280BF267F0A0F007D20D1 /* WikiImageTableView.swift */; };
+		9FF280C2267F0BD3007D20D1 /* WikiImageTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF280C1267F0BD3007D20D1 /* WikiImageTableCellView.swift */; };
+		9FF280C5267F0E04007D20D1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF280C4267F0E04007D20D1 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,8 @@
 		9F4E0AB4267238FE00F2904C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FDF76C22675E4420032CA2C /* BaseApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiProtocol.swift; sourceTree = "<group>"; };
 		9FDF76C42675FE780032CA2C /* MediaWikiApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWikiApi.swift; sourceTree = "<group>"; };
+		9FF280BF267F0A0F007D20D1 /* WikiImageTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiImageTableView.swift; sourceTree = "<group>"; };
+		9FF280C1267F0BD3007D20D1 /* WikiImageTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiImageTableCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF280C5267F0E04007D20D1 /* SDWebImageSwiftUI in Frameworks */,
 				9F96AA9E2674A6BA00AC0E4C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +119,7 @@
 		9F4E0A94267238FC00F2904C /* mediaWiki */ = {
 			isa = PBXGroup;
 			children = (
+				9FF280BE267F09D2007D20D1 /* View */,
 				9FDF76C12675E4060032CA2C /* Utils */,
 				9F009B7E2674B1F400A1FAF2 /* DataStructure */,
 				9F96AA9F2674A82700AC0E4C /* Model */,
@@ -168,6 +175,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		9FF280BE267F09D2007D20D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FF280BF267F0A0F007D20D1 /* WikiImageTableView.swift */,
+				9FF280C1267F0BD3007D20D1 /* WikiImageTableCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +202,7 @@
 			name = mediawiki;
 			packageProductDependencies = (
 				9F96AA9D2674A6BA00AC0E4C /* Alamofire */,
+				9FF280C4267F0E04007D20D1 /* SDWebImageSwiftUI */,
 			);
 			productName = mediawiki;
 			productReference = 9F4E0A92267238FC00F2904C /* mediawiki.app */;
@@ -261,6 +278,7 @@
 			packageReferences = (
 				9F96AA9B2674A3A500AC0E4C /* XCRemoteSwiftPackageReference "XcodeGen" */,
 				9F96AA9C2674A6BA00AC0E4C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9FF280C3267F0E04007D20D1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 9F4E0A93267238FC00F2904C /* Products */;
 			projectDirPath = "";
@@ -308,7 +326,9 @@
 				9F4E0A98267238FC00F2904C /* ContentView.swift in Sources */,
 				9F4E0A96267238FC00F2904C /* MediaWikiApp.swift in Sources */,
 				9FDF76C52675FE780032CA2C /* MediaWikiApi.swift in Sources */,
+				9FF280C2267F0BD3007D20D1 /* WikiImageTableCellView.swift in Sources */,
 				9FDF76C32675E4420032CA2C /* BaseApiProtocol.swift in Sources */,
+				9FF280C0267F0A0F007D20D1 /* WikiImageTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +667,14 @@
 				minimumVersion = 5.4.3;
 			};
 		};
+		9FF280C3267F0E04007D20D1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -654,6 +682,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9F96AA9C2674A6BA00AC0E4C /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		9FF280C4267F0E04007D20D1 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FF280C3267F0E04007D20D1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
