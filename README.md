@@ -3,8 +3,9 @@
 
 # 使用技術
 
-Swift 5.0  
+Swift 5.4  
 SwiftUI  
 Combine  
 Swift Pckage Manager  
 Alamofire 5.4.3  
+SDWebImageSwiftUI  
