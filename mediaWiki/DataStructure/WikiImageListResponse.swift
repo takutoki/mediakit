@@ -25,7 +25,7 @@
 
 import Foundation
 
-class WikiImageListResponse: Codable {
+struct WikiImageListResponse: Codable {
     var query: Allimages
     
     struct Allimages: Codable {

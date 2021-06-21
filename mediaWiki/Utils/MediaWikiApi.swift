@@ -16,7 +16,7 @@ class MediaWikiApi: BaseApiProtocol {
     var queryParameters = ""
     var headers: HTTPHeaders? = [.accept("application/json")]
 
-    func hoge() {
-        get(url: <#T##String#>, parameters: <#T##[String : String]#>)
-    }
+//    func hoge() {
+//        get(url: <#T##String#>, parameters: <#T##[String : String]#>)
+//    }
 }
