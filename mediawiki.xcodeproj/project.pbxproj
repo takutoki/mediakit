@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9F009B802674B22100A1FAF2 /* WikiImageListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F009B7F2674B22100A1FAF2 /* WikiImageListResponse.swift */; };
 		9F009B822675D2B500A1FAF2 /* WikiImageListResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F009B812675D2B500A1FAF2 /* WikiImageListResponseTests.swift */; };
+		9F33521526870A24003CD31F /* WikiSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33521426870A24003CD31F /* WikiSearchView.swift */; };
+		9F33521726871171003CD31F /* WikiTitleListTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33521626871171003CD31F /* WikiTitleListTableCellView.swift */; };
+		9F33521926871392003CD31F /* WikiTitleListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33521826871392003CD31F /* WikiTitleListTableView.swift */; };
+		9F33521B268717BC003CD31F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33521A268717BC003CD31F /* Article.swift */; };
 		9F4E0A96267238FC00F2904C /* MediaWikiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E0A95267238FC00F2904C /* MediaWikiApp.swift */; };
 		9F4E0A98267238FC00F2904C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E0A97267238FC00F2904C /* ContentView.swift */; };
 		9F4E0A9A267238FD00F2904C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4E0A99267238FD00F2904C /* Assets.xcassets */; };
@@ -44,6 +48,10 @@
 /* Begin PBXFileReference section */
 		9F009B7F2674B22100A1FAF2 /* WikiImageListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiImageListResponse.swift; sourceTree = "<group>"; };
 		9F009B812675D2B500A1FAF2 /* WikiImageListResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiImageListResponseTests.swift; sourceTree = "<group>"; };
+		9F33521426870A24003CD31F /* WikiSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSearchView.swift; sourceTree = "<group>"; };
+		9F33521626871171003CD31F /* WikiTitleListTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiTitleListTableCellView.swift; sourceTree = "<group>"; };
+		9F33521826871392003CD31F /* WikiTitleListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiTitleListTableView.swift; sourceTree = "<group>"; };
+		9F33521A268717BC003CD31F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		9F4E0A92267238FC00F2904C /* mediawiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mediawiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4E0A95267238FC00F2904C /* MediaWikiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWikiApp.swift; sourceTree = "<group>"; };
 		9F4E0A97267238FC00F2904C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +103,7 @@
 			children = (
 				9F009B7F2674B22100A1FAF2 /* WikiImageListResponse.swift */,
 				9FF280C8267F2DAE007D20D1 /* Media.swift */,
+				9F33521A268717BC003CD31F /* Article.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -125,9 +134,7 @@
 				9FF280BE267F09D2007D20D1 /* View */,
 				9FDF76C12675E4060032CA2C /* Utils */,
 				9F009B7E2674B1F400A1FAF2 /* DataStructure */,
-				9F96AA9F2674A82700AC0E4C /* Model */,
 				9F4E0A95267238FC00F2904C /* MediaWikiApp.swift */,
-				9F4E0A97267238FC00F2904C /* ContentView.swift */,
 				9F4E0A99267238FD00F2904C /* Assets.xcassets */,
 				9F4E0A9E267238FD00F2904C /* Info.plist */,
 				9F4E0A9B267238FD00F2904C /* Preview Content */,
@@ -162,13 +169,6 @@
 			path = mediawikiUITests;
 			sourceTree = "<group>";
 		};
-		9F96AA9F2674A82700AC0E4C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		9FDF76C12675E4060032CA2C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +183,10 @@
 			children = (
 				9FF280C1267F0BD3007D20D1 /* WikiImageTableCellView.swift */,
 				9FF280C6267F1C6F007D20D1 /* WikiDetailView.swift */,
+				9F4E0A97267238FC00F2904C /* ContentView.swift */,
+				9F33521426870A24003CD31F /* WikiSearchView.swift */,
+				9F33521626871171003CD31F /* WikiTitleListTableCellView.swift */,
+				9F33521826871392003CD31F /* WikiTitleListTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,9 +331,13 @@
 			files = (
 				9F009B802674B22100A1FAF2 /* WikiImageListResponse.swift in Sources */,
 				9FF280C7267F1C6F007D20D1 /* WikiDetailView.swift in Sources */,
+				9F33521726871171003CD31F /* WikiTitleListTableCellView.swift in Sources */,
 				9F4E0A98267238FC00F2904C /* ContentView.swift in Sources */,
 				9F4E0A96267238FC00F2904C /* MediaWikiApp.swift in Sources */,
 				9FF280C9267F2DAE007D20D1 /* Media.swift in Sources */,
+				9F33521926871392003CD31F /* WikiTitleListTableView.swift in Sources */,
+				9F33521526870A24003CD31F /* WikiSearchView.swift in Sources */,
+				9F33521B268717BC003CD31F /* Article.swift in Sources */,
 				9FDF76C52675FE780032CA2C /* MediaWikiApi.swift in Sources */,
 				9FF280C2267F0BD3007D20D1 /* WikiImageTableCellView.swift in Sources */,
 				9FDF76C32675E4420032CA2C /* BaseApiProtocol.swift in Sources */,
